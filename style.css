@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    background: linear-gradient(to right, #da4453, #89216b);
+}
+.container
+{ 
+    background-color: white;
+    width: 80%;
+    margin: auto; 
+}
+.proimg
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proimg img
+{
+    border: 5px solid gray;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px grey, -1px -1px 3px grey;
+}
+.header h1{
+    text-align: center;
+    margin: 10px 20px;
+}
+.header
+{
+    padding-bottom: 20px;
+    background-color: lavender;
+}
+.divider span
+{
+    width: 100vw;
+    height: 10px;
+    background-color: black;
+}
+.divider
+{
+    height: 5px;
+    background-color: black;
+    margin: 20px;
+    box-shadow: 5px 5px 5px gray;
+}
+.main
+{
+    display: flex;
+}
+.left{
+    flex: 0 0 35%;
+    width: 30%;
+    background-color: #2B1B17;
+    color: white;
+    box-sizing: border-box;
+} 
+.contact
+{
+    padding:10px 0 0 20px;
+}  
+.qualification
+{
+    padding:10px 0 0 20px;
+}
+.languages
+{
+    padding:10px 0 0 20px;
+}
+hr
+{
+    margin: 15px 0 20px 0;
+}
+.left p{
+    padding: 5px 5px;
+    font-size: 1.1rem;
+}
+.contact p i
+{
+    background-color: white;
+    color: #2B1B17;
+    padding:5px;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+.left p i{
+    margin-right: 10px;
+}
+.left h3{
+    margin:20px 0 5px 0;
+    background-color: black;
+    padding: 8px;
+    color: gold;
+}
+table td{
+    padding: 5px;
+}
+tr{
+    margin-bottom: 10px;
+}
+.skills
+{
+    padding:10px 0 0 20px;
+}
+.skillset
+{
+    background-color: white;
+    border-radius: 15px;
+    width: 80%; 
+} 
+.skill
+{
+    background:gray;
+    color: white; 
+    padding: 1%; 
+    text-align: right; 
+    font-size: 20px; 
+    border-radius: 15px;
+    height:8px;
+}
+.ms
+{
+    width: 100%;
+}
+.html
+{
+    width: 85%;
+}
+.bootstrap
+{
+    width: 60%;
+}
+.js
+{
+    width: 60%;
+}
+.seo
+{
+    width: 60%;
+}
+.work
+{
+    margin:20px 0;
+}
+.right
+{
+    margin-top: 20px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    flex: 0 0 65%;
+    width: 70%;
+}
+.verdiv
+{
+    width: 5px;
+    height: 100vh;
+    background-color: black;
+}
+.right p
+{
+    font-size: 1.2rem;
+    margin: 5px 0;
+    text-align: justify;
+    line-height: 2rem;
+}
+.right h2{
+    background: linear-gradient(to right, #da4453, #89216b);
+    width: 50%;
+    padding: 5px 3px 4px 20px;
+    border-radius:0 20px    ;
+}
