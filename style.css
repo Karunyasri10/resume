@@ -1,176 +1,285 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-body
-{
-    background: linear-gradient(to right, #da4453, #89216b);
-}
-.container
-{ 
-    background-color: white;
-    width: 80%;
-    margin: auto; 
-}
-.proimg
-{
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body
+    {
+        background: linear-gradient(to right, #da4453, #89216b);
+    }
+    .container
+    { 
+        background-color: white;
+        width: 80%;
+        margin: auto; 
+    }
+    .proimg
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .proimg img
+    {
+        border: 5px solid gray;
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+        padding: 10px;
+        box-shadow: 3px 3px 5px grey, -1px -1px 3px grey;
+    }
+    .header h1{
+        text-align: center;
+        margin: 10px 20px;
+    }
+    .header
+    {
+        padding-bottom: 20px;
+        background-color: lavender;
+    }
+    .divider span
+    {
+        width: 100vw;
+        height: 10px;
+        background-color: black;
+    }
+    .divider
+    {
+        height: 5px;
+        background-color: black;
+        margin: 20px;
+        box-shadow: 5px 5px 5px gray;
+    }
+    .main
+    {
+        display: flex;
+    }
+    .left{
+        flex: 0 0 35%;
+        width: 30%;
+        background-color: #2B1B17;
+        color: white;
+        box-sizing: border-box;
+    } 
+    .contact
+    {
+        padding:10px 0 0 20px;
+    }  
+    .qualification
+    {
+        padding:10px 0 0 20px;
+    }
+    .languages
+    {
+        padding:10px 0 0 20px;
+    }
+    hr
+    {
+        margin: 15px 0 20px 0;
+    }
+    .left p{
+        padding: 5px 5px;
+        font-size: 1.1rem;
+    }
+    .contact p i
+    {
+        background-color: white;
+        color: #2B1B17;
+        padding:5px;
+        border-radius: 50%;
+        font-size: 1rem;
+    }
+    .left p i{
+        margin-right: 10px;
+    }
+    .left h3{
+        margin:20px 0 5px 0;
+        background-color: black;
+        padding: 8px;
+        color: gold;
+    }
+    table td{
+        padding: 5px;
+    }
+    tr{
+        margin-bottom: 10px;
+    }
+    .skills
+    {
+        padding:10px 0 0 20px;
+    }
+    .skillset
+    {
+        background-color: white;
+        border-radius: 15px;
+        width: 80%; 
+    } 
+    .skill
+    {
+        background:gray;
+        color: white; 
+        padding: 1%; 
+        text-align: right; 
+        font-size: 20px; 
+        border-radius: 15px;
+        height:8px;
+    }
+    .ms
+    {
+        width: 100%;
+    }
+    .html
+    {
+        width: 85%;
+    }
+    .bootstrap
+    {
+        width: 60%;
+    }
+    .js
+    {
+        width: 60%;
+    }
+    .seo
+    {
+        width: 60%;
+    }
+    .work
+    {
+        margin:20px 0;
+    }
+    .right
+    {
+        margin-top: 20px;
+        padding: 0 25px;
+        box-sizing: border-box;
+        flex: 0 0 65%;
+        width: 70%;
+    }
+    .verdiv
+    {
+        width: 5px;
+        height: 100vh;
+        background-color: black;
+    }
+    .right p
+    {
+        font-size: 1.2rem;
+        margin: 5px 0;
+        text-align: justify;
+        line-height: 2rem;
+    }
+    .right h2{
+        background: linear-gradient(to right, #da4453, #89216b);
+        width: 50%;
+        padding: 5px 3px 4px 20px;
+        border-radius:0 20px    ;
+    }
+    /* Container and body remain same */
+
+.main {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 30px; /* add space between left and right */
+    align-items: flex-start; /* align top edges */
+    padding: 20px 40px; /* add some padding around content */
 }
-.proimg img
-{
-    border: 5px solid gray;
-    border-radius: 50%;
-    width: 140px;
-    height: 140px;
-    padding: 10px;
-    box-shadow: 3px 3px 5px grey, -1px -1px 3px grey;
-}
-.header h1{
-    text-align: center;
-    margin: 10px 20px;
-}
-.header
-{
-    padding-bottom: 20px;
-    background-color: lavender;
-}
-.divider span
-{
-    width: 100vw;
-    height: 10px;
-    background-color: black;
-}
-.divider
-{
-    height: 5px;
-    background-color: black;
-    margin: 20px;
-    box-shadow: 5px 5px 5px gray;
-}
-.main
-{
-    display: flex;
-}
-.left{
-    flex: 0 0 35%;
-    width: 30%;
+
+.left {
+    flex: 0 0 35%; /* fixed 35% width */
     background-color: #2B1B17;
     color: white;
     box-sizing: border-box;
-} 
-.contact
-{
-    padding:10px 0 0 20px;
-}  
-.qualification
-{
-    padding:10px 0 0 20px;
+    padding: 20px 25px; /* add padding inside left panel */
+    border-radius: 10px; /* subtle rounding for style */
 }
-.languages
-{
-    padding:10px 0 0 20px;
+
+.right {
+    flex: 0 0 65%; /* fixed 65% width */
+    background-color: #fff; /* white background to contrast left */
+    box-sizing: border-box;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-hr
-{
-    margin: 15px 0 20px 0;
+
+/* Fix heading in right section to not take too little width */
+.right h2 {
+    background: linear-gradient(to right, #da4453, #89216b);
+    padding: 8px 20px;
+    border-radius: 0 20px 20px 0;
+    width: auto; /* allow heading width auto, remove fixed 50% */
+    color: white;
+    margin-bottom: 15px;
 }
-.left p{
-    padding: 5px 5px;
+
+/* Paragraphs and lists in right section */
+.right p, .right ul {
     font-size: 1.1rem;
+    line-height: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
 }
-.contact p i
-{
+
+.workyr {
+    font-weight: bold;
+    margin-top: 25px;
+    color: #89216b;
+}
+
+/* Adjust font size for left panel items */
+.left p, .left table td {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.contact p i {
     background-color: white;
     color: #2B1B17;
-    padding:5px;
+    padding: 5px;
     border-radius: 50%;
     font-size: 1rem;
-}
-.left p i{
     margin-right: 10px;
 }
-.left h3{
-    margin:20px 0 5px 0;
+
+.left h3 {
+    margin: 20px 0 10px 0;
     background-color: black;
-    padding: 8px;
+    padding: 10px;
     color: gold;
+    border-radius: 5px;
 }
-table td{
-    padding: 5px;
+.skills-list {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    gap: 8px; /* space between each skill */
+    padding-left: 20px;
+    margin-top: 10px;
 }
-tr{
-    margin-bottom: 10px;
-}
-.skills
-{
-    padding:10px 0 0 20px;
-}
-.skillset
-{
-    background-color: white;
+
+.skill-item {
+    color: white;
+    font-weight: bold;
+    padding: 6px 12px;
     border-radius: 15px;
-    width: 80%; 
-} 
-.skill
-{
-    background:gray;
-    color: white; 
-    padding: 1%; 
-    text-align: right; 
-    font-size: 20px; 
-    border-radius: 15px;
-    height:8px;
+    width: fit-content;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+    font-size: 1.1rem;
 }
-.ms
-{
-    width: 100%;
-}
-.html
-{
-    width: 85%;
-}
-.bootstrap
-{
-    width: 60%;
-}
-.js
-{
-    width: 60%;
-}
-.seo
-{
-    width: 60%;
-}
-.work
-{
-    margin:20px 0;
-}
-.right
-{
-    margin-top: 20px;
-    padding: 0 25px;
-    box-sizing: border-box;
-    flex: 0 0 65%;
-    width: 70%;
-}
-.verdiv
-{
-    width: 5px;
-    height: 100vh;
-    background-color: black;
-}
-.right p
-{
-    font-size: 1.2rem;
-    margin: 5px 0;
-    text-align: justify;
-    line-height: 2rem;
-}
-.right h2{
-    background: linear-gradient(to right, #da4453, #89216b);
-    width: 50%;
-    padding: 5px 3px 4px 20px;
-    border-radius:0 20px    ;
+
+/* Responsive fix: stack columns on smaller screens */
+@media (max-width: 900px) {
+    .main {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 15px;
+    }
+    .left, .right {
+        flex: 1 0 100%;
+        width: 100%;
+        border-radius: 0;
+        padding: 15px;
+    }
+    .right h2 {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
 }
